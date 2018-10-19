@@ -1,0 +1,1 @@
+Referencing updating ages of pages will produce enough results to find a good ratio between the number of hits and misses that exists when tryin to find a page number in a piece of memory.
