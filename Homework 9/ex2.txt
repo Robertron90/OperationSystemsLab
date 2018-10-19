@@ -1,1 +1,0 @@
-Referencing multiple frames every thousand memory references will produce enough faults to find a good ratio between the number of hits and misses that exists when tryin to find a page number in a piece of memory.
