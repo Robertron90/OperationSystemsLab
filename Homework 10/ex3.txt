@@ -1,0 +1,34 @@
+gedit _ex3.txt
+
+chmod ugo-x _ex3.txt
+
+chmod uo+rwx _ex3.txt
+
+stat -c "%a" _ex3.txt
+767
+
+chmod -R g=u /week10/_ex3.txt
+
+stat -c "%a" _ex3.txt
+777
+
+chmod 660 _ex3.txt
+ls -l file
+-rw-rw----
+read/write for user
+read/write for group 
+no permissions for others
+
+chmod 775 _ex3.txt
+ls -l file
+-rwxrwxr-x
+read/write/execute for user
+read/write/execute for group
+read/execute for others
+
+chmod 777 _ex3.txt
+ls -l file
+-rwxrwxrwx 
+read/write/execute for user
+read/write/execute for group
+read/write/execute for others

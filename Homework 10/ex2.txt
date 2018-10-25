@@ -1,0 +1,15 @@
+mkdir week01
+gedit file.txt
+cd /week10 
+link /week01/file.txt _ex2.txt
+
+ls -i week01/file.txt
+Output:
+1179679	week01/file.txt
+
+find -inum 1281622
+Output:
+/week01/_ex2.txt
+/week01/file.txt
+
+find -inum 1281622 -exec rm {} \;
