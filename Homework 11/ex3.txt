@@ -1,0 +1,17 @@
+If we run the programs, we can see that in program 1 the output is
+as follows:
+Hello
+Hello
+
+Whereas in the second program we have:
+Hello
+
+
+This happens because in the first case, 
+Hello is buffered (STDOUT works with line buffering) 
+and then is inherited with the buffer by the child process.
+Calling fork() implies copying the process 
+and copying the buffer. 
+
+In the second program, right after fork() is called, both buffers
+will be empty, therefore they will simply "print" the new line (\n)
